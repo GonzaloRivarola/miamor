@@ -1,0 +1,71 @@
+.carta-container {
+    position: relative;
+    min-height: 100vh;
+
+    overflow: hidden;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .carta {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp .8s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animación de corazones */
+  .corazones::before,
+  .corazones::after {
+    content: '💖';
+    position: absolute;
+    font-size: 2rem;
+    animation: flotar 5s linear infinite;
+    opacity: 0.6;
+  }
+  
+  .corazones::after {
+    content: '💗';
+    left: 80%;
+    animation-delay: 2s;
+  }
+  
+  .corazones::before {
+    left: 20%;
+  }
+  
+  @keyframes flotar {
+    0% {
+      bottom: -50px;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      bottom: 100%;
+      opacity: 0;
+    }
+  }
+  
+  .espacio {
+    margin-bottom: 1em;
+  }
+  

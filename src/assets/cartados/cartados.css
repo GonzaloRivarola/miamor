@@ -1,0 +1,19 @@
+.carta-containerdos {
+    position: relative;
+    min-height: 20rem;
+
+    overflow: hidden;
+    padding: 2rem;
+    padding-top: 4rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .fotodos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.fotodos img {
+    height: 8rem;
+    
+}
